@@ -1,8 +1,9 @@
-@import 'base/bootstrap-reboot.min';
+@import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 // base files
-
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
 //
 
 * {
@@ -10,14 +11,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .container {
     max-width:  1140px;
     margin: 0 auto;
-    
+    padding: 0 20px;
 }
 // blocks
-
+@import 'blocks/promo.scss';
+@import 'blocks/header.scss';
 //
 
 // media files
