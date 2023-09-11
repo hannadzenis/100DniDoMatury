@@ -1,11 +1,18 @@
 $white: #ffff;
-$bg-main-color: #150e20;
-$hd-main-color: #1A0B2E;
+$main-color: #F7B217;
+
+$gradient-main: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%), #DE485C;
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 .icon {
     padding: 8px;
     border-radius: 100px;
-    background: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%), #DE485C;
+    background: $gradient-main;
     transition: all 0.5s;
     &:hover {
         scale: 1.2;
@@ -17,10 +24,5 @@ $hd-main-color: #1A0B2E;
         transition: all 0.5s;
         
     }
-}
+}   
 
-a {
-    &:hover {
-        text-decoration: none;
-    }
-}
