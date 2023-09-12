@@ -3,7 +3,9 @@
     justify-content: space-between;
     height: 110px;
     padding: 0 40px;
-    
+    &__logo{
+        cursor: pointer;
+    }
     &__nav {
         display: flex;
         align-items: center;

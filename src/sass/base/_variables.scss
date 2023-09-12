@@ -1,6 +1,5 @@
 $white: #ffff;
 $main-color: #F7B217;
-
 $gradient-main: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%), #DE485C;
 
 a {
@@ -24,5 +23,27 @@ a {
         transition: all 0.5s;
         
     }
-}   
+}
 
+.divider{
+    width: 150px;
+    height: 3px;
+    background-color: #F5A925;
+    margin: 15px auto;
+}
+
+.bg-color{
+    background: #F0F0F0;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 32px;
+}
+
+.button{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}

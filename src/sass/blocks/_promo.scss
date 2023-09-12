@@ -11,7 +11,6 @@
         max-width: 591px;
         min-height: 215px;
         position: absolute;
-        // top: 320px;
         bottom: 100px;
         left: 40px;
         color: $white;
@@ -26,8 +25,6 @@
         font-weight: 400;
     }
     &__buttons {
-        // max-width: 601px;
-        // min-height: 50px;
         display: flex;
         gap: 30px;
         margin: 54px 0 0 0;
@@ -35,7 +32,6 @@
         &__item {
             padding: 10px 30px;
             border-radius: 15px;
-            border: none;
             
             background: $gradient-main;
             color: $white;
@@ -49,7 +45,6 @@
                 transition: all 0.2s;
                 transform: translateY(0px);
                 filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
-                outline: 0;
             }
         }
     }
@@ -66,8 +61,8 @@
         right: 0;
 
         svg {
-            width: 100px;
-            height: 100px;
+            width: 149px;
+            height: 149px;
         }
 
     }
