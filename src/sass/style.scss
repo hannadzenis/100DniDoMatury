@@ -15,6 +15,7 @@
     scroll-behavior: smooth;
     // background-color: #F0F0F0;
 }
+
 .container {
     max-width:  1140px;
     margin: 0 auto;
@@ -25,6 +26,7 @@
 @import 'blocks/header.scss';
 @import 'blocks/reasons.scss';
 @import 'blocks/platform.scss';
+@import 'blocks/courses.scss';
 //
 
 // media files

@@ -9,6 +9,7 @@
     <!-- libraries  -->
     <title>MyTemplate</title>
     <!-- styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -19,7 +20,7 @@
                 <div class="header">
                     <div class="header__logo"><a href="#1"><img src="img/header__logo.svg" alt="logo"></a></div>
                         <div class="header__nav">
-                            <a href="#" class="header__nav__link">Курсы</a>
+                            <a href="#courses" class="header__nav__link">Курсы</a>
                             <a href="#" class="header__nav__link">Узнай свой уровень</a>
                             <a href="https://www.instagram.com/100.dnidomatury/" class="header__nav__social-link icon">
                                 <svg class="img_svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,8 +40,8 @@
                     <h1 class="promo__title">Удиви свою mama, сдай матуру!</h1>
                     <p class="promo__descr">Какой-то супер крутой текст CTA, который сразу побуждает нажимать  на красную кнопку</p>
                     <div class="promo__buttons">
-                        <button class="promo__buttons__item button__golden button"><div class="promo__buttons__item__text">Записаться на курс</div></button>
-                        <button class="promo__buttons__item button__transparent button"><div>Записаться на консультацию</div></button>
+                        <button class="promo__buttons__item button__golden button button-anim"><div class="promo__buttons__item__text">Записаться на курс</div></button>
+                        <button class="promo__buttons__item button__transparent button button-anim"><div>Записаться на консультацию</div></button>
                     </div>
                 </div>
                 <div class="icon promo__call">
@@ -105,9 +106,56 @@
             </div>
         </div>
     </section>
+    <section class="courses bg-color" id="courses">
+        <div class="container">
+            <div class="courses__vector">
+                <h2 class="main-title">Наши курсы</h2>
+                <div class="divider"></div>
+                <div class="courses__descr">Lorem ipsum dolor sit amet consectetur. Velit cum vitae in laoreet amet duis lorem faucibus. Mi convallis eget urna amet ut sed ridiculus sit ut. Interdum ut pellentesque porta eros rhoncus. </div>
+                <div #swiperRef="" class="swiper mySwiper">
+                    <div class="courses__cards swiper-wrapper">
+                        <div class="courses__card swiper-slide">
+                            <div class="courses__card__title">Standard</div>
+                                <div class="courses__card__descr">Для тех кто хочет изучать польский язык в современном формате</div>
+                                <ul class="courses__card__list marker-img">
+                                    <li class="courses__card__list__item">Личный кабинет на интерактивной платформе</li>
+                                    <li class="courses__card__list__item">27 часов занятий с преподавателем</li>
+                                    <li class="courses__card__list__item">Доступ к общему чату в Telegram</li>
+                                    <li class="courses__card__list__item">Ежедневные задания</li>
+                                    <li class="courses__card__list__item">Онлайн спикинг-клабы</li>
+                                    <li class="courses__card__list__item">Доступ к записям всех занятий</li>
+                                    <li class="courses__card__list__item">Возможность посещать занятия как утром, так и вечером</li>
+                                </ul>
+                                <div class="courses__card__price">300zl</div>
+                                <button class="courses__card__button button button-anim">Записаться</button>
+                        </div>
+                        <div class="courses__card swiper-slide">
+                            <div class="courses__card__title">No limits</div>
+                                <div class="courses__card__descr">Для тех кто хочет заниматься в свободном графике и больше практиковаться</div>
+                                <ul class="courses__card__list marker-img">
+                                    <li class="courses__card__list__item">Личный кабинет на интерактивной платформе</li>
+                                    <li class="courses__card__list__item">27 часов занятий с преподавателем</li>
+                                    <li class="courses__card__list__item">Доступ к общему чату в Telegram</li>
+                                    <li class="courses__card__list__item">Ежедневные задания</li>
+                                    <li class="courses__card__list__item">Онлайн спикинг-клабы</li>
+                                    <li class="courses__card__list__item">Доступ к записям всех занятий</li>
+                                    <li class="courses__card__list__item">Возможность посещать занятия как утром, так и вечером</li>
+                                </ul>
+                                <div class="courses__card__price">500zl</div>
+                                <button class="courses__card__button button button-anim">Записаться</button>
+                        </div>
+                        <div class="courses__card courses__card__soon swiper-slide">SOON</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- script imports  -->
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
     <script>
         AOS.init();
     </script>
