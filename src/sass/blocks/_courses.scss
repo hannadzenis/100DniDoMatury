@@ -1,109 +1,110 @@
-.courses{
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    &__vector{
-        width: 100%;
-        max-height: 570px;
-        background: url('../../img/courses__vector.png') no-repeat center/contain;
-    }
-    &__descr{
-        max-width: 840px;
-        margin: 0 auto;
-        font-size: 16px;
-        line-height: 25px;
-        padding:  0 27px;
-    }
-    &__cards{
-        padding: 47px 20px; 
+.courses {
+    padding: 80px 0;
+    min-height: 650px;
 
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    position: relative;    
+    &__cards {
+        
+        margin-top: 20px;
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+        grid-template-rows: repeat(1, minmax(625px, auto));
+        grid-auto-rows: minmax(625px, auto);
+
+        
+        
+        justify-content: center;
+        align-items:center;
+        
+        gap: 20px;
     }
-    &__card{
-        position: relative;
-        max-width: 425px;
+    &__card {
         min-height: 625px;
+        max-width: 425px;
+        position: relative;
+        padding-bottom: 80px;
         border-radius: 30px;
         
-        background: #F0F0F0;
+        background: $bg-color;
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
-        &__soon{
-            border-radius: 30px;
-            background: linear-gradient(95deg, #EF4949 2.39%, #DE485C 97.66%), #F0F0F0;
-        }
-        &__title{
-            padding: 17px;
-            border-radius: 30px 30px 0px 0px;
-            background: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%);
-            color: $white;
 
-            font-size: 32px;
-            text-align: center;
-            line-height: 50px;
+        &:last-child {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+            font-size: 72px;
+            color: $white;
+            background: $gradient-red;
         }
-        &__descr{
-            height: 100px; 
-            padding: 15px 35px;
+        
+        &__title {
+            height: 85px;
+            border-radius: 30px 30px 0px 0px;
+            background: $main-color;
+            
+            color: $white;
+            text-align: center;
+            font-size: 32px;
+            line-height: 85px;
+        }
+        &__descr {
+            // height: 100px; 
+            padding: 20px 30px;
             color: #000;
             text-align: center;
             font-size: 20px;
             line-height: 25px;
         }
-        &__list{
-            max-width: 329px;
-            padding: 0 0 0 22px;
-            &__item{
-                padding: 5px 0;
-                color: #000;
-                font-size: 16px;
-                line-height: 25px;
+        &__list {
+            margin: 0 20px 0 50px;
+            li {
+                position: relative;
+                &::after{
+                    content: url('../img/checkbox.svg');
+                    position: absolute;
+                    left: -35px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+        }
+        &__more {
+            text-align: center;
+            display: block;
+            margin: 15px auto;
+            color: $main-color;
+            &:hover {
+                text-decoration: none;
+                color: $gradient-red;
             }
         }
         &__button{
-            max-width: 172px;
-            min-height: 50px;
-            padding: 0 30px;
+        
             position: absolute;
-            bottom: 30px;
-            right: 30px;
-            border-radius: 15px;
-            background: #DE485C;
-            color: $white;
-            font-size: 20px;
-            line-height: 50px;
+            bottom: 25px;
+            right: 25px;
+            background: $gradient-red;
         }
         &__price{
             max-width: 144px;
             min-height: 80px;
-            padding: 15px 32px;
+            padding: 0 35px;
             position: absolute;
             bottom: 0;
             left: 0;
+            
             border-radius: 0px 30px;
             background: #E7E7E7;
+            
             color: #2F2F2F;
             font-size: 32px;
             font-weight: 300;
-            line-height: 50px;
+            line-height: 80px;
         }
     }
 }
 
-.swiper {
-    width: 100vw;
-    height: 100%;
-    position: relative;
-    left: 50%;
-    transform:translate(-50%);
-}
-
-.swiper-button-next, .swiper-button-prev{
-    color:#EF9149;
-}
-
-// .swiper-button-next:after, .swiper-button-prev:after{
-//     content: '!';
-// }

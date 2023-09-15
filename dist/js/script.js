@@ -1,7 +1,7 @@
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     centeredSlides: true,
-    spaceBetween: 50,
+    spaceBetween: 25,
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
