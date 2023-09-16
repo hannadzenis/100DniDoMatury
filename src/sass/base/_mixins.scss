@@ -1,0 +1,15 @@
+@mixin red_circle {
+    content: '';
+    display:block;
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    background-color: $main-color-red;
+    position: absolute;
+    z-index: 0;
+    left: -5px;
+    top: 45%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+}
+//example

@@ -1,13 +1,60 @@
 $white: #ffff;
 $main-color: #F7B217;
 $gradient-main: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%), #DE485C;
+$bg-color: #F0F0F0;
+$gradient-red: linear-gradient(95deg, #EF4949 2.39%, #DE485C 97.66%), #F0F0F0;
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    line-height: 25px;
+    min-width: 350px;
+}
+ul {
+    margin: 0 0 15px 0;
+    list-style: none;
+}
+li {
+    margin: 0 0 10px 0;
+    
+}
 
 a {
     &:hover {
         text-decoration: none;
+        color:white;
+    }
+}
+.link-anim {
+    &:after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 2px;
+        margin: 0 auto;
+        background-color: $main-color;
+        transition: all 0.5s;
+    }
+    
+    &:hover {
+        color: $main-color;
+        &::after {
+            transition: all 0.5s;
+            width: 100%;
+        }
     }
 }
 
+.divider {
+    width: 150px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 15px auto;
+}
 .icon {
     padding: 8px;
     border-radius: 100px;
@@ -25,7 +72,19 @@ a {
     }
 }
 
-.button-anim{
+.button {
+    padding: 10px 30px;
+    border-radius: 15px;
+    
+    background: $gradient-main;
+    color: $white;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+.button-anim {
     transition: all 0.5s;
 
     &:hover {
@@ -39,30 +98,28 @@ a {
     }
 }
 
-.divider{
-    width: 150px;
-    height: 3px;
-    background-color: #F5A925;
-    margin: 15px auto;
-}
 
-.bg-color{
-    background: #F0F0F0;
-}
+// .marker-img{
+//     list-style-image: url('../../img/checkbox.svg');
+//     list-style-position: inside;
+// }
 
-.main-title{
-    text-align: center;
-    font-size: 32px;
-}
+.blob {
+    margin: 0 auto;
+    max-height: 600px;
+    max-width: 600px;
 
-.button{
-    border: none;
-    &:focus{
-        outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+    transition: 0.5s all;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-}
-
-.marker-img{
-    list-style-image: url('../../img/checkbox.svg');
-    list-style-position: inside;
 }
