@@ -19,7 +19,7 @@
 .container {
     max-width:  1140px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 // blocks
 @import 'blocks/promo.scss';
@@ -28,6 +28,7 @@
 @import 'blocks/platform.scss';
 @import 'blocks/courses.scss';
 @import 'blocks/team';
+@import 'blocks/reviews';
 //
 
 // media files

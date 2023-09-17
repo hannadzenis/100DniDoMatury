@@ -1,33 +1,36 @@
 .courses {
-    padding: 80px 0;
-    min-height: 650px;
+    margin-top: 65px;
 
-    position: relative;    
+    position: relative;
+    
+    &__descr {
+        margin-bottom: 35px;
+    }
     &__cards {
         
         margin-top: 20px;
         
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
-        grid-template-rows: repeat(1, minmax(625px, auto));
-        grid-auto-rows: minmax(625px, auto);
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+        // grid-template-rows: repeat(1, minmax(625px, auto));
+        // grid-auto-rows: minmax(625px, auto);
 
         
+        // display: flex;
+        // justify-content: center;
+        // align-items:center;
         
-        justify-content: center;
-        align-items:center;
-        
-        gap: 20px;
+        // gap: 20px;
     }
     &__card {
         min-height: 625px;
-        max-width: 425px;
+        // max-width: 425px;
         position: relative;
         padding-bottom: 80px;
         border-radius: 30px;
         
         background: $bg-color;
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+        // box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 
         &:last-child {
             display: flex;
@@ -107,4 +110,6 @@
         }
     }
 }
+
+
 

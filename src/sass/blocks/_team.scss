@@ -1,18 +1,19 @@
-.team{
-    min-height: 600px;
-    width: 100%;
+.team {
+    margin-top: 65px;
+
     
     position: relative;
     
     &__wrapper{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items:center;
+        flex-wrap: wrap;
 
-        gap:100px;
+        gap: 30px;
+        margin: 35px 0 0 0;
 
         &__item{
-            margin: 64px 0 0 0;
             
             &__name{
                 margin: 25px 0 0 0;

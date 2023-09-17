@@ -28,3 +28,12 @@
 @media screen and (max-width: 575px) {
     
 }
+// Small screen <576px 
+@media screen and (max-width: 395px) {
+    .reviews {
+
+        &__right {
+            max-width: 300px;
+        }
+    }
+}
