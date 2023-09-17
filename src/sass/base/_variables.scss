@@ -25,7 +25,7 @@ li {
 a {
     &:hover {
         text-decoration: none;
-        color:white;
+        color:black;
     }
 }
 .link-anim {
@@ -70,20 +70,51 @@ a {
         
     }
 }
+.call {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    svg {
+        width: 70px;
+        height: 70px;
+    }
+}
+.cta {
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 300px;
+
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: 10;
+
+    background: $gradient-main;
+    transition: all 0.5s;
+    
+    color: $white;
+    text-align: center;
+    font-weight: 400;
+
+}
 
 .button {
     padding: 10px 30px;
     border-radius: 15px;
-    
+    text-align: center;
     background: $gradient-main;
     color: $white;
     border: none;
+
     &:focus{
         outline: none;
     }
 }
 
 .button-anim {
+    transform: translateY(0px);
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
     transition: all 0.5s;
 
     &:hover {
@@ -120,20 +151,25 @@ a {
     font-weight: 500;
 }
 
-.swiper-wrapper {
-    // display: flex;
-    // justify-content: left;
-    // align-items: center;
-}
 .swiper-slide {
     width: 100%;
     height: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .swiper-pagination-bullet {
 
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    // color: #000;
+    opacity: 1;
+    
+    background: $bg-color;
     &-active {
         background: $main-color;
     }
 }
+

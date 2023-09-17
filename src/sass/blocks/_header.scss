@@ -1,11 +1,11 @@
 .header {
-    display: flex;
-    justify-content: space-between;
     height: 110px;
     padding: 0 40px;
-    &__logo{
-        cursor: pointer;
-    }
+    display: flex;
+    justify-content: space-between;
+    // &__logo{
+    //     position: absolute;
+    // }
     &__nav {
         display: flex;
         align-items: center;

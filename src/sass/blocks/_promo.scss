@@ -1,19 +1,16 @@
 .promo {
+    height: 100%;
     width: 100%;
+    padding-bottom: 100px;
+    position: relative;
+    // min-width: 650px;
+    min-height: 610px;
+    background: url('../img/promo__bg.png') center/cover no-repeat;
     // min-height: 650px;
-    &__photo {
-        position: relative;
-        width: 100%;
-        min-width: 650px;
-        min-height: 610px;
-        background: url('../img/promo__bg.png') center/cover no-repeat;
-    }
+    
     &__wrapper{
-        max-width: 591px;
-        min-height: 215px;
-        position: absolute;
-        bottom: 100px;
-        left: 40px;
+        max-width: 600px;
+        margin-top: 200px;
         color: $white;
     }
     &__title{
@@ -27,24 +24,9 @@
     }
     &__buttons {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         margin: 54px 0 0 0;
     }
-    &__call {
-        width: 145px;
-        height: 145px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        svg {
-            width: 149px;
-            height: 149px;
-        }
-    }
+    
 }

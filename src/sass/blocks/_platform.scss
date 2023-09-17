@@ -8,26 +8,23 @@
     
     &__preview {
         max-width: 312px;
-        height: 635px;
+
         margin: 32px auto;
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
-    }
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
     }
     &__descr {
         max-width: 800px;
-        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
     }
-    // &__button {
-    //     min-width: 208px;
-    //     max-height: 68px;
-    // }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
+    }
 }
