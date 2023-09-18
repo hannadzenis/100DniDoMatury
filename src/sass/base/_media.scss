@@ -22,11 +22,27 @@
     
 }
 @media screen and (max-width: 690px) {
+    .header{
+        &__nav {
+            display: none;
+        }
+    }
+
     
 }
 // Small screen <576px 
 @media screen and (max-width: 575px) {
-    
+    .cta {
+        max-width: 270px;
+        &__title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &__subtitle {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
 }
 // Small screen <576px 
 @media screen and (max-width: 395px) {
