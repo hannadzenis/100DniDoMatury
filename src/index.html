@@ -6,13 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- favicon  -->
+
 	<!-- open graph  -->
+
 	<!-- libraries  -->
-	<title>100DniDoMatury</title>
+	<title>Курсы польского языка в Варшаве!</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- <script>const script_QuizUA = document.createElement('script'); script_QuizUA.setAttribute('src', 'https://quizua.com/assets/js/quizua.js',); script_QuizUA.setAttribute('async', ''); script_QuizUA.onload = function handleScriptLoaded() { console.log('script_QuizUA has loaded'); quiz_UA.addStyles(); quiz_UA.addModal('https://quizua.com/quiz/6dd35023a66b007d956b191c9d943d2f86ee85cdc0ad'); quiz_UA.addButton({ it1_button_form: 'round-border', it1_button_location: 'left-position', it1_button_title: 'Пройти квиз и подобрать лучший курс польского', it1_button_under_title: 'Начни менять свою жизнь вместе с нами ', it1_button_color: '#2091F8', it1_button_text_color: '#fff', it1_button_blinking: 'animate', }); }; script_QuizUA.onerror = function handleScriptError() { console.log('error loading script_QuizUA'); }; document.head.appendChild(script_QuizUA);</script> -->
 </head>
 
 <body>
@@ -48,15 +52,18 @@
 		</div>
 		<div class="container">
 			<div class="promo__wrapper">
-				<h1 class="promo__title">Удиви свою mama, сдай матуру!</h1>
-				<p class="promo__descr">Какой-то супер крутой текст CTA, который сразу побуждает нажимать на красную
-					кнопку</p>
+				<h1 class="promo__title">Курсы польского языка в Варшаве!</h1>
+				<p class="promo__descr">
+					Поможем тебе не только в изучении польского языка, но и в достижении результа в ближайшие сроки.
+					<br>
+					Записывайся на бесплатную консультацию!
+				</p>
 				<div class="promo__buttons">
-					<a href="#" class="promo__buttons__item button__golden button button-anim">
-						<div class="promo__buttons__item__text">Записаться на курс</div>
+					<a href="#" class="button promo__buttons__item button-anim">
+						Записаться на консультацию
 					</a>
-					<a href="#" class="promo__buttons__item button__transparent button button-anim">
-						<div>Записаться на консультацию</div>
+					<a href="#" class="button promo__buttons__item button-anim">
+						Записаться на курс
 					</a>
 				</div>
 			</div>
@@ -77,8 +84,16 @@
 		</svg>
 	</a>
 
-	<a href="https://t.me/stodnidomatury" class="button-anim cta">
+	<!-- <a href="https://t.me/stodnidomatury" class="cta">
 		Подпишись на канал в telegram, чтобы ничего не пропустить!
+	</a> -->
+	<a href="https://quizua.com/quiz/6dd35023a66b007d956b191c9d943d2f86ee85cdc0ad" class="cta">
+		<div class="cta__title">
+			Пройти квиз и подобрать лучший курс польского
+		</div>
+		<div class="cta__subtitle">
+			Начни менять свою жизнь вместе с нами!
+		</div>
 	</a>
 
 
@@ -384,17 +399,40 @@
 			<div class="blob">
 				<img src="img/reviews__vector.svg" alt="blob">
 			</div>
-
-
 		</div>
-
 	</section>
 
+	<section class="contact">
+		<div class="container">
+			<h2 class="main-title">Связаться с нами</h2>
+			<div class="divider"></div>
 
+			<form action="mail.php" method="POST" class="contact__form">
+				<div class="contact__form__left">
+					<input type="text" class="name" name="user_name" placeholder="Имя" required>
+					<input type="text" class="surname" name="user_surname" placeholder="Фамилия" required>
+					<input type="email" class="email" name="user_email" placeholder="Email" required>
+					<input type="phone" class="phone" name="user_phone" placeholder="Номер телефона">
+					<input type="text" class="phone" name="user_phone" placeholder="Название курса">
+				</div>
+				<textarea name="user_message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+
+				<div class="privacy-policy">
+					<input type="checkbox" class="privacy-policy__input" name="user_policy" required>
+					<span> Я принимаю <a class="privacy-policy__link" href="policy.html">политику обработки
+							данных</a></span>
+				</div>
+				<button type="submit" class="button button-anim contact__form__button">Отправить сообщение</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- <script>const script_QuizUA = document.createElement('script'); script_QuizUA.setAttribute('src', 'https://quizua.com/assets/js/quizua.js',); script_QuizUA.setAttribute('async', ''); script_QuizUA.onload = function handleScriptLoaded() { console.log('script_QuizUA has loaded'); quiz_UA.addStyles(); quiz_UA.addModal('https://quizua.com/quiz/6dd35023a66b007d956b191c9d943d2f86ee85cdc0ad'); quiz_UA.addButton({ it1_button_form: 'round-border', it1_button_location: 'left-position', it1_button_title: 'Пройти квиз и подобрать лучший курс польского', it1_button_under_title: 'Начни менять свою жизнь вместе с нами ', it1_button_color: '#2091F8', it1_button_text_color: '#fff', it1_button_blinking: 'animate', }); }; script_QuizUA.onerror = function handleScriptError() { console.log('error loading script_QuizUA'); }; document.head.appendChild(script_QuizUA);</script> -->
 	<!-- script imports  -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/script.js"></script>
+
 
 	<!-- <script>
 		AOS.init();

@@ -4,6 +4,10 @@ $gradient-main: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97
 $bg-color: #F0F0F0;
 $gradient-red: linear-gradient(95deg, #EF4949 2.39%, #DE485C 97.66%), #F0F0F0;
 
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
 h2 {
     text-align: center;
     font-size: 32px;
@@ -72,30 +76,39 @@ a {
 }
 .call {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     z-index: 10;
     svg {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
 }
 .cta {
     padding: 10px;
-    border-radius: 15px;
-    max-width: 300px;
+    border-radius: 0 15px 0 0;
+    max-width: 800px;
 
     position: fixed;
-    bottom: 5px;
-    left: 5px;
+    bottom: 0px;
+    left: 0px;
     z-index: 10;
 
-    background: $gradient-main;
+    // background: $gradient-main;
+    background: #2091F8;
     transition: all 0.5s;
     
     color: $white;
-    text-align: center;
-    font-weight: 400;
+    text-align: left;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 300;
+    }
 
 }
 
