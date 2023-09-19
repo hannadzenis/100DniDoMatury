@@ -12,7 +12,11 @@
 }
 // Medium screen <992px
 @media screen and (max-width: 991px) {
-
+.reviews {
+    &__left {
+        max-width: 450px;
+    }
+}
 }
 @media screen and (max-width:850px) {
     
@@ -31,9 +35,9 @@
     
 }
 // Small screen <576px 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 601px) {
     .cta {
-        max-width: 270px;
+        max-width: 50%;
         &__title {
             font-size: 14px;
             font-weight: 500;
@@ -49,34 +53,63 @@
         }
         &__right {
             max-width: 300px;
-            
-            // position: absolute;
-            // left: 20;
         }
     }
 }
 // Small screen <576px 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 481px) {
+    // .reviews {
+        
+    //     &__wrapper {
+    //     }
+        
+    //     &__right {
+    //         max-width: 260px;
+    //         // transform: translateX(-10%);
+    //     }
+    // }
+}
+@media screen and (max-width: 381px) {
     .reviews {
         
         &__wrapper {
         }
         
         &__right {
-            max-width: 260px;
-            // transform: translateX(-5%);
+            max-width: 260px; 
         }
     }
 }
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 338px) {
     .reviews {
         
         &__wrapper {
         }
         
         &__right {
-            max-width: 160px;
-            // transform: translateX(-5%);
+            max-width: 220px; 
+        }
+    }
+}
+@media screen and (max-width: 296px) {
+    .reviews {
+        
+        &__wrapper {
+        }
+        
+        &__right {
+            max-width: 200px; 
+        }
+    }
+}
+@media screen and (max-width: 273px) {
+    .reviews {
+        
+        &__wrapper {
+        }
+        
+        &__right {
+            max-width: 180px; 
         }
     }
 }
