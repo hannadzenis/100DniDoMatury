@@ -43,13 +43,40 @@
             font-weight: 300;
         }
     }
-}
-// Small screen <576px 
-@media screen and (max-width: 395px) {
     .reviews {
-
+        &__wrapper {
+            
+        }
         &__right {
             max-width: 300px;
+            
+            // position: absolute;
+            // left: 20;
+        }
+    }
+}
+// Small screen <576px 
+@media screen and (max-width: 450px) {
+    .reviews {
+        
+        &__wrapper {
+        }
+        
+        &__right {
+            max-width: 260px;
+            // transform: translateX(-5%);
+        }
+    }
+}
+@media screen and (max-width: 270px) {
+    .reviews {
+        
+        &__wrapper {
+        }
+        
+        &__right {
+            max-width: 160px;
+            // transform: translateX(-5%);
         }
     }
 }

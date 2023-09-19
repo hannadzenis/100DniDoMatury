@@ -3,7 +3,7 @@ AOS.init();
 const swiper = new Swiper(".coursesSwiper", {
     direction: "horizontal",
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
     grabcursor: true,
 
     pagination: {
@@ -20,7 +20,7 @@ const swiper = new Swiper(".coursesSwiper", {
 
         690: {
             slidesPerView: 1,
-            spaceBetween: 30
+            spaceBetween: 0
         },
         // when window width is >= 767px
         767: {
@@ -37,7 +37,7 @@ const swiper = new Swiper(".coursesSwiper", {
 
 const swiper2 = new Swiper(".reviewsSwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
 
     effect: "cards",
     grabcursor: true,
