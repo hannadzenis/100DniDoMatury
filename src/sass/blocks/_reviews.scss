@@ -4,8 +4,8 @@
     position: relative;
     &__wrapper {
         max-width: 850px;
-        margin-top: 45px;
         margin: 0 auto;
+        margin-top: 45px;
 
         display: flex;
         justify-content: center;
@@ -54,6 +54,7 @@
             text-align: center;
             font-size: 24px;
         }
+        
     }
 }
 

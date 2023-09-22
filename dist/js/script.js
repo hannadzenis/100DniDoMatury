@@ -19,13 +19,13 @@ const swiper = new Swiper(".coursesSwiper", {
         // when window width is >= 1px
 
         690: {
-            slidesPerView: 1,
-            spaceBetween: 0
+            slidesPerView: 2,
+            spaceBetween: 10
         },
         // when window width is >= 767px
         767: {
             slidesPerView: 2,
-            spaceBetween: 30
+            spaceBetween: 20
         },
         // when window width is >= 1140px
         1140: {
@@ -45,3 +45,30 @@ const swiper2 = new Swiper(".reviewsSwiper", {
     // effect: "flip",
 
 });
+
+// JavaScript
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+const cross = document.querySelector('.menu__close');
+const menuButtons = document.querySelectorAll('[data-menu]')
+
+// === menu ===
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+    document.body.style.overflow = 'hidden'
+});
+
+cross.addEventListener('click', function () {
+    menu.classList.remove('active');
+    document.body.style.overflow = ''
+
+});
+
+menuButtons.forEach((item) => {
+    item.addEventListener('click', () => {
+
+        menu.classList.remove('active');
+        document.body.style.overflow = ''
+    })
+});
+// === menu end ===

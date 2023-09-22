@@ -1,7 +1,7 @@
 .promo {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    padding-bottom: 100px;
+    // padding-bottom: 100px;
     position: relative;
     // min-width: 650px;
     min-height: 610px;
@@ -10,11 +10,13 @@
     
     &__wrapper{
         max-width: 800px;
-        margin-top: 200px;
+        // margin-bottom: 100px;
         color: $white;
+        position: absolute;
+        bottom: 100px;
     }
     &__title{
-        margin: 0 0 20px;
+        margin: 0 0 30px 0;
     }
     &__descr {
         font-size: 20px;
@@ -24,7 +26,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        margin: 54px 0 0 0;
+        margin: 30px 0 0 0;
         &__item {
             display: flex;
             align-items: center;

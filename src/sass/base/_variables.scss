@@ -3,6 +3,7 @@ $main-color: #F7B217;
 $gradient-main: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%), #DE485C;
 $bg-color: #F0F0F0;
 $gradient-red: linear-gradient(95deg, #EF4949 2.39%, #DE485C 97.66%), #F0F0F0;
+$grey: #464655;
 
 h1 {
     font-size: 36px;
@@ -14,7 +15,7 @@ h2 {
     margin: 0;
 }
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
 }
 ul {
@@ -22,11 +23,15 @@ ul {
     list-style: none;
 }
 li {
+    font-size: 16px;
     margin: 0 0 10px 0;
     
 }
 
 a {
+    // color: $white;
+    transition: 0.5s all;
+
     &:hover {
         text-decoration: none;
         color:black;
@@ -87,7 +92,7 @@ a {
 .cta {
     padding: 10px;
     border-radius: 0 15px 0 0;
-    max-width: 28%;
+    max-width: 70%;
 
     position: fixed;
     bottom: 0px;
