@@ -1,6 +1,6 @@
 .footer {
     margin-top: 65px;
-    min-height: 150px;
+    min-height: 50px;
     background:$grey;
     // position: relative;
     display: flex;
@@ -14,4 +14,7 @@
     //     transform: translateY(-50%);
         
     // }
+    &__right {
+        color: $white;
+    }
 }

@@ -72,3 +72,23 @@ menuButtons.forEach((item) => {
     })
 });
 // === menu end ===
+
+// const ctaLink = document.querySelector('.cta')
+// console.log(ctaLink)
+
+// function toggleCtaLink() {
+//     ctaLink.classList.add('hide')
+// }
+
+// function hideWindowOnScroll() {
+//     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+//         toggleCtaLink()
+//         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
+//     }
+//     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+//         toggleCtaLink()
+//         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
+//     }
+
+// }
+// window.addEventListener('scroll', hideWindowOnScroll)
