@@ -412,12 +412,18 @@
 			<h2 class="main-title">Связаться с нами</h2>
 			<div class="divider"></div>
 
-			<form action="mail.php" method="POST" class="contact__form">
+			<form action="mail.php" method="POST" name="submit-to-google-sheet" class="contact__form" id="form">
 				<input type="text" class="name" name="user_name" placeholder="Имя" required>
 				<input type="text" class="surname" name="user_surname" placeholder="Фамилия" required>
 				<input type="email" class="email" name="user_email" placeholder="Email" required>
 				<input type="phone" class="phone" name="user_phone" placeholder="Номер телефона">
-				<input type="text" class="phone" name="user_phone" placeholder="Название курса">
+				<label for="cars">Выберите курс:</label>
+				<select id="courses" name="courses">
+					<option value="0"></option>
+					<option value="1">A0-A1</option>
+					<option value="2">A1-A2</option>
+					<option value="3">A2-B1</option>
+				</select>
 				<textarea name="user_message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
 
 				<div class="privacy-policy">
@@ -428,6 +434,8 @@
 				<button type="submit" class="button button-anim contact__form__button">Отправить сообщение</button>
 			</form>
 
+			<p class="js-success-message is-hidden">Success!</p>
+    		<p class="js-error-message is-hidden">Error!</p>
 		</div>
 	</section>
 
@@ -524,11 +532,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/script.js"></script>
-
-
-	<!-- <script>
-		AOS.init();
-	</script> -->
 </body>
 
 </html>
