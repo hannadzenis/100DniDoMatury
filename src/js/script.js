@@ -92,3 +92,16 @@ menuButtons.forEach((item) => {
 
 // }
 // window.addEventListener('scroll', hideWindowOnScroll)
+
+
+
+//Отправка формы в Google Sheets
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxU-pqd4o96uVOZEI106NgFeOwPFnAt6EEVnN1jrrSW5w9zTAJXtoLCDGKcq2ha28Oe/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})
