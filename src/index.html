@@ -434,13 +434,20 @@
 				<input type="text" class="surname" name="user_surname" placeholder="Фамилия" required>
 				<input type="email" class="email" name="user_email" placeholder="Email" required>
 				<input type="phone" class="phone" name="user_phone" placeholder="Номер телефона">
-				<label for="cars">Выберите курс:</label>
-				<select id="courses" name="courses">
-					<option value="0"></option>
-					<option value="1">A0-A1</option>
-					<option value="2">A1-A2</option>
-					<option value="3">A2-B1</option>
-				</select>
+				<label for="course">Выберите курс:</label>
+				<div class="__select" data-state="">
+					<div class="__select__title"></div>
+					<div class="__select__content" name="user_course">
+						<input id="singleSelect0" class="__select__input" type="radio" name="user_course" value='A0-A1'/>
+						<label for="singleSelect0" tabindex="0" class="__select__label" data-value="A0-A1"></label>
+						<input id="singleSelect1" class="__select__input" type="radio" name="user_course" value='A1-A2'/>
+						<label for="singleSelect1" tabindex="0" class="__select__label" data-value="A1-A2"></label>
+						<input id="singleSelect3" class="__select__input" type="radio" name="user_course" value='A2-B1'/>
+						<label for="singleSelect3" tabindex="0" class="__select__label" data-value="A2-B1"></label>
+						<input id="singleSelect4" class="__select__input" type="radio" name="user_course" value='Консультация'/>
+						<label for="singleSelect4" tabindex="0" class="__select__label" data-value="Консультация"></label>
+					</div>
+				</div>
 				<textarea name="user_message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
 
 				<div class="privacy-policy">
