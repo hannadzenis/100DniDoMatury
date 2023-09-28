@@ -105,3 +105,29 @@ form.addEventListener('submit', e => {
     .then(response => console.log('Success!', response))
     .catch(error => console.error('Error!', error.message))
 })
+
+//Select
+const selectSingle = document.querySelector('.__select');
+const selectSingle_title = selectSingle.querySelector('.__select__title');
+const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+const textarea = document.querySelector('textarea')
+
+// Toggle menu
+selectSingle_title.addEventListener('click', () => {
+    if ('active' === selectSingle.getAttribute('data-state')) {
+        textarea.style.zIndex=2;
+        selectSingle.setAttribute('data-state', '');
+    } else {
+        selectSingle.setAttribute('data-state', 'active');
+        textarea.style.zIndex=0;
+    }
+});
+
+// Close when click to option
+for (let i = 0; i < selectSingle_labels.length; i++) {
+    selectSingle_labels[i].addEventListener('click', (evt) => {
+        selectSingle_title.textContent = evt.target.textContent;
+        selectSingle.setAttribute('data-state', '');
+        textarea.style.zIndex=2;
+    });
+}
