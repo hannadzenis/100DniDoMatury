@@ -37,6 +37,12 @@ form {
             outline: none;
         }
     }
+    .policy__wrapper{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     .privacy-policy {
         display: flex;
         justify-content: center;
@@ -58,7 +64,6 @@ form {
         height: 50px;
         width: 100%;
         cursor: pointer;
-        margin-left: 30px;
     }
     input.error {
         border-color: $gradient-red;
@@ -118,15 +123,22 @@ form {
     position: relative;
   
     display: flex;
-    width: 80%;
-    height: 40px;
+    width: 100%;
+    height: 50px;
     margin: 0 auto;
     margin-bottom: 10px;
+    border-radius: 25px;
     // justify-content: center;
     z-index: 1;
+    &[data-state=""]{
+      .__select__title{
+        border-radius: 15px;
+      }
+    }
   
     &[data-state="active"] {
       .__select__title {
+        border-radius: 15px;
         &::before {
           transform: translate(-3px, -50%) rotate(-45deg);
         }
@@ -159,10 +171,11 @@ form {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 8px 16px;
+    padding: 0px 15px;
   
     border-radius: 5px;
     border: solid 1px #c7ccd1;
+    color: $grey;
   
     cursor: pointer;
   
@@ -201,13 +214,15 @@ form {
   }
   
   .__select__content {
+
     position: absolute;
-    top: 40px;
-    left: 3px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
   
     display: flex;
     flex-direction: column;
-    width: calc(100% - 6px);
+    width: calc(100% - 30px);
   
     background-color: #ffffff;
   
@@ -215,12 +230,15 @@ form {
     border-top-width: 0;
     border-bottom-width: 0;
     border-top: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   
     transition: all 0.3s ease-out;
   
     z-index: 1;
+    label{
+      margin-bottom: 0;
+    }
   }
   .__select__input {
     display: none;
@@ -242,13 +260,19 @@ form {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 40px;
+    height: 50px;
     max-height: 0;
-    padding: 0 16px;
+    padding: 0 15px;
   
     transition: all 0.2s ease-out;
+
   
     cursor: pointer;
+
+    &:last-child{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
   
     & + input + & {
       border-top: 0 solid #c7ccd160;
@@ -258,6 +282,12 @@ form {
       background-color: $main-color !important;
   
       color: #ffffff;
+    }
+    &:last-child{
+      &:hover{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
     }
   
     &::before {
@@ -269,17 +299,17 @@ form {
     }
     &::after {
       position: absolute;
-      top: -40px;
+      top: -50px;
       left: 0;
   
       display: flex;
       align-items: center;
-      width: 200px;
-      height: 40px;
-      padding: 8px 16px;
+      width: 100%;
+      height: 50px;
+      padding: 0px 15px;
   
-      color: #333333;
-  
+      color: $grey;
       z-index: -1;
+
     }
   }
