@@ -1,0 +1,37 @@
+.reasons {
+    margin-top: 65px;
+
+    position: relative;
+
+    &__grid {
+        margin-top: 20px;
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+        grid-template-rows: repeat(2, minmax(120px, auto));
+        grid-auto-rows: minmax(120px, auto);
+        
+        justify-content: center;
+        align-items:center;
+        
+        gap: 20px;
+
+        &__item {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            border-radius: 30px;
+            background: linear-gradient(95deg, #EF9149 2.39%, #F7B217 97.66%, #F7B217 97.66%);
+            color: $white;
+            
+            font-size: 20px;
+            
+            svg {
+                max-width: 78px;
+            }
+        }
+    }
+    
+}

@@ -1,25 +1,41 @@
-@import 'base/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+
 
 // base files
-
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
 //
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 .container {
     max-width:  1140px;
     margin: 0 auto;
-    
+    padding: 0 10px;
 }
 // blocks
-
+@import 'blocks/promo.scss';
+@import 'blocks/header.scss';
+@import 'blocks/reasons.scss';
+@import 'blocks/platform.scss';
+@import 'blocks/courses.scss';
+@import 'blocks/team.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/forms.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/pop-up.scss';
 //
 
 // media files
+@import 'base/media.scss';
 
 //

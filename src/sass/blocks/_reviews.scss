@@ -1,0 +1,60 @@
+.reviews {
+    margin-top: 65px;
+    // padding-bottom: 20px;
+    position: relative;
+    &__wrapper {
+        max-width: 850px;
+        margin: 0 auto;
+        margin-top: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items:top;
+
+        gap: 50px;
+        flex-wrap: wrap;
+
+    }
+    &__left {
+        max-width: 400px;
+    }
+    &__right {
+        max-width: 400px;
+
+        // display: flex;
+        // justify-content: center;
+        // margin-right: 0;
+    }
+    &__card {
+        padding: 30px;
+
+        border-radius: 30px;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+        flex-wrap: wrap;
+        background: $bg-color;
+        cursor: grab;
+        &__pic {
+            max-width: 200px;
+            max-height: 200px;
+            
+            margin: 0 auto;
+            // margin-bottom: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__name {
+            text-align: center;
+            font-size: 24px;
+        }
+        
+    }
+}
+

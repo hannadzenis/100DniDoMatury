@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 65px;
+    min-height: 50px;
+    background:$grey;
+    // position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+    // &__logo {
+    //     position: absolute;
+    //     left: 10%;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+        
+    // }
+    &__right {
+        color: $white;
+    }
+}

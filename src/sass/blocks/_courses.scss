@@ -1,0 +1,115 @@
+.courses {
+    margin-top: 65px;
+
+    position: relative;
+    
+    &__descr {
+        margin-bottom: 35px;
+    }
+    &__cards {
+        
+        margin-top: 20px;
+        
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+        // grid-template-rows: repeat(1, minmax(625px, auto));
+        // grid-auto-rows: minmax(625px, auto);
+
+        
+        // display: flex;
+        // justify-content: center;
+        // align-items:center;
+        
+        // gap: 20px;
+    }
+    &__card {
+        min-height: 625px;
+        // max-width: 425px;
+        position: relative;
+        padding-bottom: 80px;
+        border-radius: 30px;
+        
+        background: $bg-color;
+        // box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+
+        &:last-child {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+            font-size: 72px;
+            color: $white;
+            background: $gradient-red;
+        }
+        
+        &__title {
+            height: 85px;
+            border-radius: 30px 30px 0px 0px;
+            background: $main-color;
+            
+            color: $white;
+            text-align: center;
+            font-size: 24px;
+            line-height: 85px;
+        }
+        &__descr {
+            // height: 100px; 
+            padding: 20px 30px;
+            color: #000;
+            text-align: center;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &__list {
+            margin: 0 20px 0 50px;
+            li {
+                position: relative;
+                &::after{
+                    content: url('../img/checkbox.svg');
+                    position: absolute;
+                    left: -35px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+        }
+        &__more {
+            text-align: center;
+            display: block;
+            margin: 15px auto;
+            color: $main-color;
+            &:hover {
+                text-decoration: none;
+                color: $gradient-red;
+            }
+        }
+        &__button{
+        
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            background: $gradient-red;
+        }
+        &__price{
+            max-width: 144px;
+            min-height: 80px;
+            padding: 0 35px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+            border-radius: 0px 30px;
+            background: #E7E7E7;
+            
+            color: #2F2F2F;
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 80px;
+        }
+    }
+}
+
+
+

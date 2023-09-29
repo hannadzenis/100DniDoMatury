@@ -1,0 +1,184 @@
+
+// Medium screen <1400px
+@media screen and (max-width: 1399px) {
+    
+}
+// Medium screen <1200px
+@media screen and (max-width: 1199px) {
+    
+}
+@media screen and (max-width: 1000px) {
+    
+}
+// Medium screen <992px
+@media screen and (max-width: 991px) {
+.reviews {
+    &__left {
+        max-width: 450px;
+    }
+}
+}
+@media screen and (max-width:850px) {
+    
+}
+// Small screen <768px
+@media screen and (max-width: 767px) {
+    .courses {
+        &__cards {
+            &__title {
+                font-size: 24px;
+            }
+        }
+    }
+}
+// Hamburger
+@media screen and (max-width: 690px) {
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+    }
+    p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .header{
+        &__nav {
+            display: none;
+        }
+    }
+    .hamburger {
+        display: flex;
+    }
+    .cta {
+        
+        &__title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &__subtitle {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    
+    .courses {
+        &__card {
+            &__title {
+                font-size: 24px;
+
+            }
+            &__descr {
+                font-size: 18px;
+            }
+        }
+    }
+    .reviews {
+        &__card {
+            padding: 25px;
+        }
+    }
+    
+    
+}
+// Small screen <601px 
+@media screen and (max-width: 601px) {
+    .reviews {
+        &__right {
+            max-width: 300px;
+        }
+    }
+}
+// Small screen <481px 
+@media screen and (max-width: 481px) {
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .promo {
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .courses {
+        &__card {
+            &__title {
+                font-size: 24px;
+
+            }
+            &__descr {
+                font-size: 18px;
+            }
+        }
+    }
+    .team {
+        &__wrapper{
+            &__item {
+                &__name {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .reviews {
+        &__right {
+            max-width: 260px; 
+        }
+        &__card {
+            padding: 20px;
+
+
+            &__name {
+                font-size: 16px;
+            }
+            &__message {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .reviews {
+        &__right {
+            max-width: 240px; 
+        }
+    }
+}
+@media screen and (max-width: 385px) {
+    .reviews {
+        &__right {
+            max-width: 200px; 
+        }
+    }
+    
+}
+@media screen and (max-width: 338px) {
+    .reviews {
+        &__right {
+            max-width: 160px; 
+        }
+    }
+}
+@media screen and (max-width: 296px) {
+    .reviews {
+        &__right {
+            max-width: 140px; 
+        }
+    }
+}
+@media screen and (max-width: 273px) {
+    .reviews {
+        &__right {
+            max-width: 120px; 
+        }
+    }
+}
