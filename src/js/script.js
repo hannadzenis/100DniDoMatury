@@ -131,3 +131,62 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
         textarea.style.zIndex=2;
     });
 }
+
+//Pop-up
+const modalWindow = document.querySelector('.overlay');
+const modalButtons = document.querySelectorAll('.contact__form__button');
+const modalClose = document.querySelector('.pop-up__close');
+
+const contactInputs = document.querySelectorAll('[data-needed]');
+
+const policy = document.querySelector('.privacy-policy__input');
+
+
+// console.log(policy)
+
+contactInputs.forEach((input)=>{
+    if(input.value !== ''){
+        console.log(input.value)
+    }
+})
+
+// modal open
+modalButtons.forEach((item) => {
+    
+    item.addEventListener('click', openModal);
+});
+
+// modal close
+modalClose.addEventListener('click', closeModal);
+
+// modal close on window
+window.addEventListener('click', (e) => {
+    if (e.target == modalWindow) {
+        closeModal()
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape') {
+        closeModal()
+    }
+})
+
+function openModal() {
+
+    contactInputs.forEach((input)=>{
+        if((input.value !== '') & (policy.checked)){
+            console.log(input.value)
+            modalWindow.style.display = 'block'
+            // modal scroll lock
+            document.body.style.overflow = 'hidden'
+        }
+    })
+
+}
+function closeModal() {
+    modalWindow.style.display = 'none'
+    // modal scroll unlock
+    document.body.style.overflow = ''
+}
+
