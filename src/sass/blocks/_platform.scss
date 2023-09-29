@@ -7,9 +7,10 @@
     position: relative;
     
     &__preview {
-        max-width: 312px;
-
+        margin: 0 auto;
+        max-width: 900px;
         margin: 32px auto;
+        
         img {
             width: 100%;
             height: 100%;
@@ -18,8 +19,10 @@
     }
     &__descr {
         max-width: 800px;
+        margin: 0 auto;
         margin-bottom: 20px;
         text-align: center;
+        
     }
     &__button {
         display: block;
