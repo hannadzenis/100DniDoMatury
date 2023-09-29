@@ -101,9 +101,9 @@ const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
 })
 
 //Select
@@ -115,11 +115,11 @@ const textarea = document.querySelector('textarea')
 // Toggle menu
 selectSingle_title.addEventListener('click', () => {
     if ('active' === selectSingle.getAttribute('data-state')) {
-        textarea.style.zIndex=2;
+        textarea.style.zIndex = 2;
         selectSingle.setAttribute('data-state', '');
     } else {
         selectSingle.setAttribute('data-state', 'active');
-        textarea.style.zIndex=0;
+        textarea.style.zIndex = 0;
     }
 });
 
@@ -128,7 +128,7 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
     selectSingle_labels[i].addEventListener('click', (evt) => {
         selectSingle_title.textContent = evt.target.textContent;
         selectSingle.setAttribute('data-state', '');
-        textarea.style.zIndex=2;
+        textarea.style.zIndex = 2;
     });
 }
 
@@ -141,18 +141,9 @@ const contactInputs = document.querySelectorAll('[data-needed]');
 
 const policy = document.querySelector('.privacy-policy__input');
 
-
-// console.log(policy)
-
-contactInputs.forEach((input)=>{
-    if(input.value !== ''){
-        console.log(input.value)
-    }
-})
-
 // modal open
 modalButtons.forEach((item) => {
-    
+
     item.addEventListener('click', openModal);
 });
 
@@ -174,12 +165,13 @@ document.addEventListener('keydown', (e) => {
 
 function openModal() {
 
-    contactInputs.forEach((input)=>{
-        if((input.value !== '') & (policy.checked)){
-            console.log(input.value)
+    contactInputs.forEach((input) => {
+        if ((input.value !== '') & (policy.checked)) {
+            // console.log(input.value)
             modalWindow.style.display = 'block'
             // modal scroll lock
             document.body.style.overflow = 'hidden'
+            document.getElementById('form').reset()
         }
     })
 

@@ -62,14 +62,14 @@
 
 	<section class="promo" id="1">
 		<div class="header">
-	
+
 			<a class="header__logo" href="#">
 				<img src="img/header__logo.svg" alt="logo">
 			</a>
 			<!-- to do: adaptives + create menu  -->
 			<div class="header__nav">
 				<a href="#courses" class="header__nav__link">Курсы</a>
-				<a href="#" class="header__nav__link">Узнай свой уровень</a>
+				<a href="#form" class="header__nav__link">Узнай свой уровень</a>
 				<a href="https://www.instagram.com/100.dnidomatury/" class="header__nav__social-link icon">
 					<svg class="img_svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@
 					</svg>
 				</a>
 			</div>
-	
+
 		</div>
 		<div class="promo__black-filter"></div>
 		<div class="container">
@@ -100,7 +100,7 @@
 					Записывайся на бесплатную консультацию!
 				</p>
 				<div class="promo__buttons">
-					<a href="#" class="button promo__buttons__item button-anim">
+					<a href="#form" class="button promo__buttons__item button-anim">
 						Записаться на консультацию
 					</a>
 					<a href="https://quizua.com/quiz/6dd35023a66b007d956b191c9d943d2f86ee85cdc0ad"
@@ -181,13 +181,23 @@
 		<div class="container">
 			<h2 class="main-title">Наша платформа</h2>
 			<div class="divider"></div>
-			<div class="platform__preview"><img src="./img/iPhone 14 Pro.svg" alt="MV"></div>
+			<div class="platform__preview">
+				<img src="./img/Macbook Pro.png" alt="platform_video_preview">
+
+			</div>
 			<p class="platform__descr">
 				Здесь вы найдете различные тематические задания, а также получите доступ к обширным образовательным
 				материалам. Учитесь удобно и эффективно, где бы вы ни находились! Обучение проходит на интерактивной
-				платформе <span class="bold">edvibe.com</span>
+				платформе <a href="https://edvibe.com/en/Account/Login" class="bold">edvibe.com</a>
+				<br>
+				<br>
+				<span class="bold">login: 100ddm.n@gmail.com</span>
+				<br>
+				<span class="bold">пароль: 5185</span>
+
 			</p>
-			<a href="#" class="button button-anim platform__button">Попровать бесплатный урок</a>
+			<a href="https://edvibe.com/en/Account/Login" class="button button-anim platform__button">Попровать
+				бесплатный урок</a>
 
 			<div class="blob">
 				<img src="img/platform__vector.svg" alt="blob">
@@ -201,8 +211,7 @@
 			<h2 class="main-title">Наши курсы</h2>
 			<div class="divider"></div>
 			<p class="courses__descr">
-
-				Обучение проходит на интерактивной платформе <span class="bold">edvibe.com</span>
+				Если вы не уверены в выборе курса, запишитесь на <span class="bold">бесплатную диагностику</span>.
 			</p>
 
 			<div class="blob">
@@ -221,6 +230,7 @@
 
 						<ul class="courses__card__list">
 							<li>Личный кабинет на платформе</li>
+							<li>Конспекты к каждому занятию</li>
 							<li>Доступ к играм и Quizlet карточкам</li>
 							<li>Cпикинг-клаб</li>
 							<li>Подписку на Netflix, c заданиями к сериалам</li>
@@ -239,7 +249,7 @@
 						</div>
 
 						<ul class="courses__card__list">
-							<li>Обучение 3 месяца</li>
+							<li>Обучение 3.5 месяца (15 недель)</li>
 							<li>Личный кабинет на платформе</li>
 							<li>Доступ к записям всех занятий</li>
 							<li>Ежедневные задания</li>
@@ -263,17 +273,17 @@
 						</div>
 
 						<ul class="courses__card__list">
-							<li>Обучение 2 месяца</li>
+							<li>Обучение 3.5 месяца (15 недель)</li>
 							<li>Личный кабинет на платформе</li>
 							<li>Доступ к записям всех занятий</li>
 							<li>Ежедневные задания</li>
 							<li>Доступ к общему чату в Telegram</li>
 							<li>Cпикинг-клаб</li>
-							<li>2 сессии с коучем</li>
+							<li>3 сессии с коучем</li>
 							<li>Подписку на Netflix, c заданиями к сериалам</li>
 						</ul>
 						<!-- <a href="#" class="courses__card__more">Подробнее</a> -->
-						<div class="courses__card__price">350zl</div>
+						<div class="courses__card__price">490zl</div>
 						<a href="#form" class="courses__card__button button button-anim">Записаться</a>
 					</div>
 
@@ -438,18 +448,27 @@
 				<div class="__select" data-state="">
 					<div class="__select__title">Выберите курс:</div>
 					<div class="__select__content" name="user_course">
-						<input id="singleSelect0" class="__select__input" type="radio" name="user_course" value='POMÓWIMY PO POLSKU'/>
-						<label for="singleSelect0" tabindex="0" class="__select__label" data-value="POMÓWIMY PO POLSKU"></label>
-						<input id="singleSelect1" class="__select__input" type="radio" name="user_course" value='A0-A1'/>
+						<input id="singleSelect0" class="__select__input" type="radio" name="user_course"
+							value='POMÓWIMY PO POLSKU' />
+						<label for="singleSelect0" tabindex="0" class="__select__label"
+							data-value="POMÓWIMY PO POLSKU"></label>
+						<input id="singleSelect1" class="__select__input" type="radio" name="user_course"
+							value='A0-A1' />
 						<label for="singleSelect1" tabindex="0" class="__select__label" data-value="A0-A1"></label>
-						<input id="singleSelect2" class="__select__input" type="radio" name="user_course" value='A1-A2'/>
+						<input id="singleSelect2" class="__select__input" type="radio" name="user_course"
+							value='A1-A2' />
 						<label for="singleSelect2" tabindex="0" class="__select__label" data-value="A1-A2"></label>
-						<input id="singleSelect3" class="__select__input" type="radio" name="user_course" value='A2-B1'/>
+						<input id="singleSelect3" class="__select__input" type="radio" name="user_course"
+							value='A2-B1' />
 						<label for="singleSelect3" tabindex="0" class="__select__label" data-value="A2-B1"></label>
-						<input id="singleSelect4" class="__select__input" type="radio" name="user_course" value='Узнай свой уровень/Бесплатная диагностика'/>
-						<label for="singleSelect4" tabindex="0" class="__select__label" data-value="Узнай свой уровень/Бесплатная диагностика"></label>
-						<input id="singleSelect5" class="__select__input" type="radio" name="user_course" value='Консультация'/>
-						<label for="singleSelect5" tabindex="0" class="__select__label" data-value="Консультация"></label>
+						<input id="singleSelect4" class="__select__input" type="radio" name="user_course"
+							value='Узнай свой уровень/Бесплатная диагностика' />
+						<label for="singleSelect4" tabindex="0" class="__select__label"
+							data-value="Узнай свой уровень/Бесплатная диагностика"></label>
+						<input id="singleSelect5" class="__select__input" type="radio" name="user_course"
+							value='Консультация' />
+						<label for="singleSelect5" tabindex="0" class="__select__label"
+							data-value="Консультация"></label>
 					</div>
 				</div>
 				<textarea name="user_message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
@@ -462,24 +481,33 @@
 					</div>
 					<button type="submit" class="button button-anim contact__form__button">Отправить заявку</button>
 				</div>
-				
+
 			</form>
 		</div>
-		
+
 	</section>
 
 	<section class="overlay">
 		<div class="container">
 			<div class="pop-up">
 				<div class="pop-up__close">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff">
-	
-					<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-					
-					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-					
-					<g id="SVGRepo_iconCarrier"> <g> <path fill="#808184" d="M16,0C11.726,0,7.708,1.664,4.687,4.687C1.665,7.708,0,11.727,0,16s1.665,8.292,4.687,11.313 C7.708,30.336,11.726,32,16,32s8.292-1.664,11.313-4.687C30.335,24.292,32,20.273,32,16s-1.665-8.292-4.687-11.313 C24.292,1.664,20.274,0,16,0z M26.606,26.606C23.773,29.439,20.007,31,16,31s-7.773-1.561-10.606-4.394S1,20.007,1,16 S2.561,8.227,5.394,5.394S11.993,1,16,1s7.773,1.561,10.606,4.394S31,11.993,31,16S29.439,23.773,26.606,26.606z"/> <path fill="#808184" d="M22.01,9.989c-0.195-0.195-0.512-0.195-0.707,0L16,15.293l-5.303-5.304c-0.195-0.195-0.512-0.195-0.707,0 s-0.195,0.512,0,0.707L15.293,16L9.99,21.304c-0.195,0.195-0.195,0.512,0,0.707c0.098,0.098,0.226,0.146,0.354,0.146 s0.256-0.049,0.354-0.146L16,16.707l5.303,5.304c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146 c0.195-0.195,0.195-0.512,0-0.707L16.707,16l5.303-5.304C22.206,10.501,22.206,10.185,22.01,9.989z"/> </g> </g>
-					
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 32 32"
+						enable-background="new 0 0 32 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff">
+
+						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+						<g id="SVGRepo_iconCarrier">
+							<g>
+								<path fill="#808184"
+									d="M16,0C11.726,0,7.708,1.664,4.687,4.687C1.665,7.708,0,11.727,0,16s1.665,8.292,4.687,11.313 C7.708,30.336,11.726,32,16,32s8.292-1.664,11.313-4.687C30.335,24.292,32,20.273,32,16s-1.665-8.292-4.687-11.313 C24.292,1.664,20.274,0,16,0z M26.606,26.606C23.773,29.439,20.007,31,16,31s-7.773-1.561-10.606-4.394S1,20.007,1,16 S2.561,8.227,5.394,5.394S11.993,1,16,1s7.773,1.561,10.606,4.394S31,11.993,31,16S29.439,23.773,26.606,26.606z" />
+								<path fill="#808184"
+									d="M22.01,9.989c-0.195-0.195-0.512-0.195-0.707,0L16,15.293l-5.303-5.304c-0.195-0.195-0.512-0.195-0.707,0 s-0.195,0.512,0,0.707L15.293,16L9.99,21.304c-0.195,0.195-0.195,0.512,0,0.707c0.098,0.098,0.226,0.146,0.354,0.146 s0.256-0.049,0.354-0.146L16,16.707l5.303,5.304c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146 c0.195-0.195,0.195-0.512,0-0.707L16.707,16l5.303-5.304C22.206,10.501,22.206,10.185,22.01,9.989z" />
+							</g>
+						</g>
+
 					</svg>
 				</div>
 				<div class="pop-up__text">Спасибо за доверие! <br> Мы свяжемся с Вами в ближайшее время.</div>
