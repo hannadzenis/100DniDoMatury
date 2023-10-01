@@ -9,7 +9,7 @@
 
         display: flex;
         justify-content: center;
-        align-items:top;
+        align-items: center;
 
         gap: 50px;
         flex-wrap: wrap;
@@ -53,6 +53,7 @@
         &__name {
             text-align: center;
             font-size: 24px;
+            margin: 10px auto;
         }
         
     }

@@ -1,184 +1,187 @@
-AOS.init();
+window.addEventListener('DOMContentLoaded', () => {
 
-const swiper = new Swiper(".coursesSwiper", {
-    direction: "horizontal",
-    slidesPerView: 1,
-    spaceBetween: 0,
-    grabcursor: true,
+    AOS.init();
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
+    const swiper = new Swiper(".coursesSwiper", {
+        direction: "horizontal",
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabcursor: true,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
         },
-    },
 
-    // Responsive breakpoints
-    breakpoints: {
-        // when window width is >= 1px
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 1px
 
-        690: {
-            slidesPerView: 2,
-            spaceBetween: 10
-        },
-        // when window width is >= 767px
-        767: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        // when window width is >= 1140px
-        1140: {
-            slidesPerView: 3,
-            spaceBetween: 10,
+            690: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            // when window width is >= 767px
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is >= 1140px
+            1140: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            }
         }
-    }
-});
+    });
 
-const swiper2 = new Swiper(".reviewsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 0,
+    const swiper2 = new Swiper(".reviewsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
 
-    effect: "cards",
-    grabcursor: true,
+        effect: "cards",
+        grabcursor: true,
 
-    // effect: "flip",
+        // effect: "flip",
 
-});
+    });
 
-// JavaScript
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
-const cross = document.querySelector('.menu__close');
-const menuButtons = document.querySelectorAll('[data-menu]')
+    // JavaScript
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    const cross = document.querySelector('.menu__close');
+    const menuButtons = document.querySelectorAll('[data-menu]')
 
-// === menu ===
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
-    document.body.style.overflow = 'hidden'
-});
+    // === menu ===
+    hamburger.addEventListener('click', () => {
+        menu.classList.add('active');
+        document.body.style.overflow = 'hidden'
+    });
 
-cross.addEventListener('click', function () {
-    menu.classList.remove('active');
-    document.body.style.overflow = ''
-
-});
-
-menuButtons.forEach((item) => {
-    item.addEventListener('click', () => {
-
+    cross.addEventListener('click', function () {
         menu.classList.remove('active');
         document.body.style.overflow = ''
-    })
-});
-// === menu end ===
 
-// const ctaLink = document.querySelector('.cta')
-// console.log(ctaLink)
-
-// function toggleCtaLink() {
-//     ctaLink.classList.add('hide')
-// }
-
-// function hideWindowOnScroll() {
-//     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
-//         toggleCtaLink()
-//         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
-//     }
-//     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
-//         toggleCtaLink()
-//         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
-//     }
-
-// }
-// window.addEventListener('scroll', hideWindowOnScroll)
-
-
-
-//Отправка формы в Google Sheets
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxU-pqd4o96uVOZEI106NgFeOwPFnAt6EEVnN1jrrSW5w9zTAJXtoLCDGKcq2ha28Oe/exec'
-const form = document.forms['submit-to-google-sheet']
-
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-})
-
-//Select
-const selectSingle = document.querySelector('.__select');
-const selectSingle_title = selectSingle.querySelector('.__select__title');
-const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
-const textarea = document.querySelector('textarea')
-
-// Toggle menu
-selectSingle_title.addEventListener('click', () => {
-    if ('active' === selectSingle.getAttribute('data-state')) {
-        textarea.style.zIndex = 2;
-        selectSingle.setAttribute('data-state', '');
-    } else {
-        selectSingle.setAttribute('data-state', 'active');
-        textarea.style.zIndex = 0;
-    }
-});
-
-// Close when click to option
-for (let i = 0; i < selectSingle_labels.length; i++) {
-    selectSingle_labels[i].addEventListener('click', (evt) => {
-        selectSingle_title.textContent = evt.target.textContent;
-        selectSingle.setAttribute('data-state', '');
-        textarea.style.zIndex = 2;
     });
-}
 
-//Pop-up
-const modalWindow = document.querySelector('.overlay');
-const modalButtons = document.querySelectorAll('.contact__form__button');
-const modalClose = document.querySelector('.pop-up__close');
+    menuButtons.forEach((item) => {
+        item.addEventListener('click', () => {
 
-const contactInputs = document.querySelectorAll('[data-needed]');
+            menu.classList.remove('active');
+            document.body.style.overflow = ''
+        })
+    });
+    // === menu end ===
 
-const policy = document.querySelector('.privacy-policy__input');
+    // const ctaLink = document.querySelector('.cta')
+    // console.log(ctaLink)
 
-// modal open
-modalButtons.forEach((item) => {
+    // function toggleCtaLink() {
+    //     ctaLink.classList.add('hide')
+    // }
 
-    item.addEventListener('click', openModal);
-});
+    // function hideWindowOnScroll() {
+    //     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+    //         toggleCtaLink()
+    //         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
+    //     }
+    //     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+    //         toggleCtaLink()
+    //         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
+    //     }
 
-// modal close
-modalClose.addEventListener('click', closeModal);
+    // }
+    // window.addEventListener('scroll', hideWindowOnScroll)
 
-// modal close on window
-window.addEventListener('click', (e) => {
-    if (e.target == modalWindow) {
-        closeModal()
+
+
+    //Отправка формы в Google Sheets
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxU-pqd4o96uVOZEI106NgFeOwPFnAt6EEVnN1jrrSW5w9zTAJXtoLCDGKcq2ha28Oe/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+
+    //Select
+    const selectSingle = document.querySelector('.__select');
+    const selectSingle_title = selectSingle.querySelector('.__select__title');
+    const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+    const textarea = document.querySelector('textarea')
+
+    // Toggle menu
+    selectSingle_title.addEventListener('click', () => {
+        if ('active' === selectSingle.getAttribute('data-state')) {
+            textarea.style.zIndex = 2;
+            selectSingle.setAttribute('data-state', '');
+        } else {
+            selectSingle.setAttribute('data-state', 'active');
+            textarea.style.zIndex = 0;
+        }
+    });
+
+    // Close when click to option
+    for (let i = 0; i < selectSingle_labels.length; i++) {
+        selectSingle_labels[i].addEventListener('click', (evt) => {
+            selectSingle_title.textContent = evt.target.textContent;
+            selectSingle.setAttribute('data-state', '');
+            textarea.style.zIndex = 2;
+        });
     }
-});
 
-document.addEventListener('keydown', (e) => {
-    if (e.code === 'Escape') {
-        closeModal()
-    }
-})
+    //Pop-up
+    const modalWindow = document.querySelector('.overlay');
+    const modalButtons = document.querySelectorAll('.contact__form__button');
+    const modalClose = document.querySelector('.pop-up__close');
 
-function openModal() {
+    const contactInputs = document.querySelectorAll('[data-needed]');
 
-    contactInputs.forEach((input) => {
-        if ((input.value !== '') & (policy.checked)) {
-            // console.log(input.value)
-            modalWindow.style.display = 'block'
-            // modal scroll lock
-            document.body.style.overflow = 'hidden'
-            document.getElementById('form').reset()
+    const policy = document.querySelector('.privacy-policy__input');
+
+    // modal open
+    modalButtons.forEach((item) => {
+
+        item.addEventListener('click', openModal);
+    });
+
+    // modal close
+    modalClose.addEventListener('click', closeModal);
+
+    // modal close on window
+    window.addEventListener('click', (e) => {
+        if (e.target == modalWindow) {
+            closeModal()
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape') {
+            closeModal()
         }
     })
 
-}
-function closeModal() {
-    modalWindow.style.display = 'none'
-    // modal scroll unlock
-    document.body.style.overflow = ''
-}
+    function openModal() {
 
+        contactInputs.forEach((input) => {
+            if ((input.value !== '') & (policy.checked)) {
+                // console.log(input.value)
+                modalWindow.style.display = 'block'
+                // modal scroll lock
+                document.body.style.overflow = 'hidden'
+                document.getElementById('form').reset()
+            }
+        })
+
+    }
+    function closeModal() {
+        modalWindow.style.display = 'none'
+        // modal scroll unlock
+        document.body.style.overflow = ''
+    }
+
+});
