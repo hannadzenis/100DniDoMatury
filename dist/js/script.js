@@ -44,8 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
         effect: "cards",
         grabcursor: true,
 
-        // effect: "flip",
-
     });
 
     // JavaScript
@@ -73,29 +71,6 @@ window.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = ''
         })
     });
-    // === menu end ===
-
-    // const ctaLink = document.querySelector('.cta')
-    // console.log(ctaLink)
-
-    // function toggleCtaLink() {
-    //     ctaLink.classList.add('hide')
-    // }
-
-    // function hideWindowOnScroll() {
-    //     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
-    //         toggleCtaLink()
-    //         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
-    //     }
-    //     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
-    //         toggleCtaLink()
-    //         // window.removeEventListener('scroll', showWindowNyScroll) // removes eventListener('scroll') to open modal only once
-    //     }
-
-    // }
-    // window.addEventListener('scroll', hideWindowOnScroll)
-
-
 
     //Отправка формы в Google Sheets
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxU-pqd4o96uVOZEI106NgFeOwPFnAt6EEVnN1jrrSW5w9zTAJXtoLCDGKcq2ha28Oe/exec'
