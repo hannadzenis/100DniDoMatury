@@ -88,6 +88,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const selectSingle_title = selectSingle.querySelector('.__select__title');
     const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
     const textarea = document.querySelector('textarea')
+    const formInputs = document.querySelectorAll('.__select__input');
+    // console.log(formInputs)
 
     // Toggle menu
     selectSingle_title.addEventListener('click', () => {
@@ -148,7 +150,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 modalWindow.style.display = 'block'
                 // modal scroll lock
                 document.body.style.overflow = 'hidden'
-                document.getElementById('form').reset()
+                formInputs.forEach((item)=>{
+                    item.removeAttribute('required', '');
+                })
             }
         })
 
@@ -157,6 +161,10 @@ window.addEventListener('DOMContentLoaded', () => {
         modalWindow.style.display = 'none'
         // modal scroll unlock
         document.body.style.overflow = ''
+        document.getElementById('form').reset()
+        formInputs.forEach((item)=>{
+            item.setAttribute('required', '');
+        })
     }
 
 });
