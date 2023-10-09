@@ -149,7 +149,18 @@
 @media screen and (max-width: 420px) {
     .reviews {
         &__right {
-            max-width: 240px; 
+            max-width: 220px;
+        }
+        &__card {
+            padding: 20px;
+
+
+            &__name {
+                font-size: 16px;
+            }
+            &__message {
+                font-size: 13px; 
+            }
         }
     }
 }
