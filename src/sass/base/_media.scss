@@ -96,6 +96,9 @@
 }
 // Small screen <481px 
 @media screen and (max-width: 481px) {
+    .blob {
+        display:none;
+    }
     h1 {
         font-size: 28px;
         font-weight: 600;
@@ -107,6 +110,10 @@
     .promo {
         &__descr {
             font-size: 18px;
+        }
+        &__wrapper {
+            bottom: none;
+            top: 27%;
         }
     }
     .courses {
