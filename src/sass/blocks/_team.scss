@@ -23,8 +23,8 @@
             &__pic {
                 max-width: 192px;
                 max-height: 192px;
-                border-radius: 1000px;
-                overflow: hidden;
+                border-radius: 100%;
+                // overflow: hidden;
                 box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
                 img {
                     border-radius: 100%;
