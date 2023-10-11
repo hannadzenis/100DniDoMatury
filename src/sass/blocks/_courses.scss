@@ -5,6 +5,7 @@
     
     &__descr {
         margin-bottom: 35px;
+        text-align: center;
     }
     &__cards {
         
@@ -75,16 +76,23 @@
                 }
             }
         }
-        &__more {
-            text-align: center;
-            display: block;
-            margin: 15px auto;
-            color: $main-color;
-            &:hover {
-                text-decoration: none;
-                color: $gradient-red;
-            }
+        &__secondary-descr{
+            position: absolute;
+            bottom: 14%;
+            left: 10px;
+            font-size: 14px;
+            color: $grey;
         }
+        // &__more {
+        //     text-align: center;
+        //     display: block;
+        //     margin: 15px auto;
+        //     color: $main-color;
+        //     &:hover {
+        //         text-decoration: none;
+        //         color: $gradient-red;
+        //     }
+        // }
         &__button{
         
             position: absolute;

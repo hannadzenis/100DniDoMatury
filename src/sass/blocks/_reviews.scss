@@ -9,7 +9,7 @@
 
         display: flex;
         justify-content: center;
-        align-items:top;
+        align-items: center;
 
         gap: 50px;
         flex-wrap: wrap;
@@ -35,7 +35,7 @@
         justify-content: center;
         align-items:center;
 
-        flex-wrap: wrap;
+        flex-direction: column;
         background: $bg-color;
         cursor: grab;
         &__pic {
@@ -43,6 +43,8 @@
             max-height: 200px;
             
             margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
             // margin-bottom: 20px;
             img {
                 width: 100%;
@@ -53,6 +55,7 @@
         &__name {
             text-align: center;
             font-size: 24px;
+            margin: 10px auto;
         }
         
     }
