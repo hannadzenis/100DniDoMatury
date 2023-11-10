@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //Отправка формы в Google Sheets
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxU-pqd4o96uVOZEI106NgFeOwPFnAt6EEVnN1jrrSW5w9zTAJXtoLCDGKcq2ha28Oe/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxv21gKz3lwTK6-22tZbHqyvdv6M5jDkyVBy1bbEw0HJ-U6kO5wmOpYokLLjIAPLvpD/exec'
     const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
