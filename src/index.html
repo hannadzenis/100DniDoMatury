@@ -115,7 +115,7 @@
 			<div class="header__nav">
 				<a href="#courses" class="header__nav__link">Курсы</a>
 				<a href="#form" class="header__nav__link">Узнай свой уровень</a>
-				<a href="https://www.instagram.com/100.dnidomatury/" class="header__nav__social-link icon">
+				<a id="instagram-link-icon" href="https://www.instagram.com/100.dnidomatury/" class="header__nav__social-link icon">
 					<svg class="img_svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -126,13 +126,29 @@
 							d="M5.29123 4.625C5.29123 4.25704 4.99295 3.95875 4.62499 3.95875C4.25703 3.95875 3.95874 4.25704 3.95874 4.625C3.95874 4.99296 4.25703 5.29125 4.62499 5.29125C4.99295 5.29125 5.29123 4.99296 5.29123 4.625Z" />
 					</svg>
 				</a>
-				<a href="https://t.me/stodnidomatury" class="header__nav__social-link icon">
+				<script>
+					ttq.track('ClickButton', {
+						"contents": [{
+							"content_id": "instagram-link-icon", 
+							"content_name": "instagram-link-icon", 
+						}],
+					});
+				</script>
+				<a id="telegram-link-icon" href="https://t.me/stodnidomatury" class="header__nav__social-link icon">
 					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z" />
 					</svg>
 				</a>
-				<a href="https://youtube.com/@100.dnidomatury?si=dXO976sgFyM3tI0o"
+				<script>
+					ttq.track('ClickButton', {
+						"contents": [{
+							"content_id": "telegram-link-icon", 
+							"content_name": "telegram-link-icon", 
+						}],
+					});
+				</script>
+				<a id="yt-link-icon" href="https://youtube.com/@100.dnidomatury?si=dXO976sgFyM3tI0o"
 					class="header__nav__social-link icon">
 					<svg width="800px" height="800px" viewBox="0 -3 20 20" version="1.1"
 						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
@@ -152,6 +168,14 @@
 						</g>
 					</svg>
 				</a>
+				<script>
+					ttq.track('ClickButton', {
+						"contents": [{
+							"content_id": "yt-link-icon", 
+							"content_name": "yt-link-icon", 
+						}],
+					});
+				</script>
 			</div>
 
 		</div>
@@ -607,7 +631,16 @@
 						<span> Я принимаю <a class="privacy-policy__link" href="policy.html">политику обработки
 								данных</a></span>
 					</div>
-					<button type="submit" class="button button-anim contact__form__button">Отправить заявку</button>
+					<button type="submit" id="form__button" class="button button-anim contact__form__button">Отправить заявку</button>
+					<script>
+						ttq.track('Contact', {
+							"contents": [{
+								"content_id": "form__button",
+								"content_type": "submit", 
+								"content_name": "form", 
+							}],
+						});
+					</script>
 				</div>
 
 			</form>
