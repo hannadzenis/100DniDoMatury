@@ -169,8 +169,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
-//Translation
-
 const select = document.querySelector('.change-lang');
 const allLang = ['ru', 'ua'];
 
@@ -180,7 +178,6 @@ select.addEventListener('change', changeURLLanguage);
 function changeURLLanguage(){
     let lang = select.value;
     location.href = window.location.pathname + '#' + lang;
-
     location.reload();
 }
 function changeLanguage(){
@@ -196,6 +193,7 @@ function changeLanguage(){
 
     for(let key in langArr){
         document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];
+        document.querySelector('.lng-' + key).placeholder = langArr[key][hash];
     }
 }
 
