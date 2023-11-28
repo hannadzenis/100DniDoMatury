@@ -168,3 +168,33 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+const select = document.querySelector('.change-lang');
+const allLang = ['ru', 'ua'];
+
+select.addEventListener('change', changeURLLanguage);
+
+//changing the url to one with chosen language hash
+function changeURLLanguage(){
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
+function changeLanguage(){
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+
+    if (!allLang.includes(hash)){
+        location.href = window.location.pathname + '#ru';
+        location.reload();
+    }
+
+    select.value = hash;
+
+    for(let key in langArr){
+        document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];
+        document.querySelector('.lng-' + key).placeholder = langArr[key][hash];
+    }
+}
+
+changeLanguage()

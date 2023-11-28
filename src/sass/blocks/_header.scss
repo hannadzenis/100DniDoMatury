@@ -33,8 +33,13 @@
             }
         }
     }
+    select{
+        background: none;
+        border: none;
+        outline: none;
+        color: $white;
+        option{
+            background: $grey;
+        }
+    }
 }
-
-
-
-
