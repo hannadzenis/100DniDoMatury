@@ -26,6 +26,12 @@
     &__descr {
         font-size: 20px;
         font-weight: 400;
+        line-height: 25px;
+        &__secondary{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
     }
     &__buttons {
         display: flex;

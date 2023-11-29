@@ -1,7 +1,10 @@
 
 // Medium screen <1400px
-@media screen and (max-width: 1399px) {
-    
+@media screen and (max-width: 2900px) {
+    .privacy-policy{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 // Medium screen <1200px
 @media screen and (max-width: 1199px) {
@@ -31,6 +34,14 @@
         }
     }
 }
+
+@media screen and (max-width: 690px) {
+    .privacy-policy{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
 // Hamburger
 @media screen and (max-width: 690px) {
     h1 {
