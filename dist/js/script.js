@@ -192,8 +192,14 @@ function changeLanguage(){
     select.value = hash;
 
     for(let key in langArr){
-        document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];
-        document.querySelector('.lng-' + key).placeholder = langArr[key][hash];
+        const word = document.querySelector('.lng-' + key)
+        if (word.id === 'input'){
+            word.placeholder = langArr[key][hash];
+        }else if(word.id === 'label'){
+            word.dataset.value = langArr[key][hash];
+        }else{
+            word.innerText = langArr[key][hash];
+        }
     }
 }
 
