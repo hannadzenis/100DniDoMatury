@@ -206,3 +206,14 @@ a {
     }
 }
 
+select{
+    max-width: fit-content;
+    background: none;
+    border: none;
+    outline: none;
+    color: $white;
+    option{
+        background: $grey;
+    }
+}
+
