@@ -169,8 +169,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
-const select = document.querySelector('.change-lang');
+const selects = document.querySelectorAll('.change-lang');
 const allLang = ['ru', 'ua'];
+const desktopSelect = selects[0];
+const mobileSelect = selects[1];
+const header = document.querySelector('.header__nav');
+// console.log(mobileSelect)
+
+function checkSelect(select) {
+    if (header.offsetParent === null){
+        select = mobileSelect;
+        return select;
+    }else{
+        select = desktopSelect;
+        return select;
+    }
+}
+const select = checkSelect(desktopSelect) && checkSelect(mobileSelect)
 
 select.addEventListener('change', changeURLLanguage);
 
