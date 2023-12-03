@@ -59,44 +59,46 @@
 	<meta name="facebook-domain-verification" content="tjypd1jcszygbutj22trm222ql82lp" />
 	<!-- Meta Pixel Code -->
 	<script>
-		!function (f, b, e, v, n, t, s) {
-			if (f.fbq) return; n = f.fbq = function () {
-				n.callMethod ?
-					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-			};
-			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-			n.queue = []; t = b.createElement(e); t.async = !0;
-			t.src = v; s = b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t, s)
-		}(window, document, 'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '1220234432180383');
-		fbq('track', 'PageView');
+		window.addEventListener('DOMContentLoaded', () => {
+			!function (f, b, e, v, n, t, s) {
+				if (f.fbq) return; n = f.fbq = function () {
+					n.callMethod ?
+						n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				};
+				if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+				n.queue = []; t = b.createElement(e); t.async = !0;
+				t.src = v; s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s)
+			}(window, document, 'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '1220234432180383');
+			fbq('track', 'PageView');
 
-		! function (w, d, t) {
-			w.TiktokAnalyticsObject = t;
-			var ttq = w[t] = w[t] || [];
-			ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) {
-				t[e] = function () {
-					t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-				}
-			};
-			for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
-			ttq.instance = function (t) {
-				for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
-				return e
-			}, ttq.load = function (e, n) {
-				var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
-				ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
-				n = document.createElement("script");
-				n.type = "text/javascript", n.async = !0, n.src = i + "?sdkid=" + e + "&lib=" + t;
-				e = document.getElementsByTagName("script")[0];
-				e.parentNode.insertBefore(n, e)
-			};
+			! function (w, d, t) {
+				w.TiktokAnalyticsObject = t;
+				var ttq = w[t] = w[t] || [];
+				ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) {
+					t[e] = function () {
+						t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+					}
+				};
+				for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+				ttq.instance = function (t) {
+					for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+					return e
+				}, ttq.load = function (e, n) {
+					var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+					ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+					n = document.createElement("script");
+					n.type = "text/javascript", n.async = !0, n.src = i + "?sdkid=" + e + "&lib=" + t;
+					e = document.getElementsByTagName("script")[0];
+					e.parentNode.insertBefore(n, e)
+				};
 
-			ttq.load('CKT7PI3C77U5FRI5SKQG');
-			ttq.page();
-		}(window, document, 'ttq');
+				ttq.load('CKT7PI3C77U5FRI5SKQG');
+				ttq.page();
+			}(window, document, 'ttq');
+		});
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=1220234432180383&ev=PageView&noscript=1" /></noscript>
@@ -128,12 +130,15 @@
 					</svg>
 				</a>
 				<script>
-					ttq.track('ClickButton', {
-						"contents": [{
-							"content_id": "instagram-link-icon",
-							"content_name": "instagram-link-icon",
-						}],
+					window.addEventListener('DOMContentLoaded', () => {
+						ttq.track('ClickButton', {
+							"contents": [{
+								"content_id": "instagram-link-icon",
+								"content_name": "instagram-link-icon",
+							}],
+						});
 					});
+
 				</script>
 				<a id="telegram-link-icon" href="https://t.me/stodnidomatury" class="header__nav__social-link icon">
 					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,11 +147,14 @@
 					</svg>
 				</a>
 				<script>
-					ttq.track('ClickButton', {
-						"contents": [{
-							"content_id": "telegram-link-icon",
-							"content_name": "telegram-link-icon",
-						}],
+					window.addEventListener('DOMContentLoaded', () => {
+
+						ttq.track('ClickButton', {
+							"contents": [{
+								"content_id": "telegram-link-icon",
+								"content_name": "telegram-link-icon",
+							}],
+						});
 					});
 				</script>
 				<a id="yt-link-icon" href="https://youtube.com/@100.dnidomatury?si=dXO976sgFyM3tI0o"
@@ -170,11 +178,13 @@
 					</svg>
 				</a>
 				<script>
-					ttq.track('ClickButton', {
-						"contents": [{
-							"content_id": "yt-link-icon",
-							"content_name": "yt-link-icon",
-						}],
+					window.addEventListener('DOMContentLoaded', () => {
+						ttq.track('ClickButton', {
+							"contents": [{
+								"content_id": "yt-link-icon",
+								"content_name": "yt-link-icon",
+							}],
+						});
 					});
 				</script>
 				<select class="change-lang header__lang-change">
