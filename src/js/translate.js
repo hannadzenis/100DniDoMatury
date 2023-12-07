@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    
+
     //translation
     const selects = document.querySelectorAll('.change-lang');
     const allLang = ['ru', 'ua'];
@@ -18,7 +18,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     const select = checkSelect(desktopSelect) && checkSelect(mobileSelect)
 
-    select.addEventListener('change', changeURLLanguage);
+    select.addEventListener('change', (e) => {
+        e.preventDefault()
+        changeURLLanguage()
+
+    });
 
     //changing the url to one with chosen language hash
     function changeURLLanguage() {
