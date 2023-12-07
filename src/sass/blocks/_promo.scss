@@ -3,7 +3,8 @@
     width: 100%;
     position: relative;
     min-height: 610px;
-    background: url('../img/promo__bg2.jpg') center/cover no-repeat;
+    // background: url('../img/promo__bg2.jpg') center/cover no-repeat;
+    background: url('../img/xmas_bg.png') center/cover no-repeat;
 
     &__black-filter{
         width: 100%;
@@ -12,6 +13,7 @@
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.6);
+        overflow: hidden;
     }
     
     &__wrapper{

@@ -206,6 +206,22 @@ a {
     }
 }
 
+.xmas__gift {
+    // position: absolute;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    width: 100px;
+    height: 100px;
+    // transform: translateX(50%);
+    // right: 50%;
+    // bottom: -40px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
 select{
     max-width: fit-content;
     background: none;
