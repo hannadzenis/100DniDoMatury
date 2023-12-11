@@ -6,22 +6,22 @@ window.addEventListener('DOMContentLoaded', () => {
     const desktopSelect = selects[0];
     const mobileSelect = selects[1];
     const header = document.querySelector('.header__nav');
+    // console.log(mobileSelect)
 
-    function checkSelect(select) {
+    function checkSelect(s) {
         if (header.offsetParent === null) {
-            select = mobileSelect;
-            return select;
+            s = mobileSelect;
+            return s;
         } else {
-            select = desktopSelect;
-            return select;
+            s = desktopSelect;
+            return s;
         }
     }
-    const select = checkSelect(desktopSelect) && checkSelect(mobileSelect)
+    const select = checkSelect(mobileSelect) && checkSelect(desktopSelect);
 
     select.addEventListener('change', (e) => {
         e.preventDefault()
         changeURLLanguage()
-
     });
 
     //changing the url to one with chosen language hash
