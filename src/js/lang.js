@@ -1,5 +1,5 @@
 // window.addEventListener('DOMContentLoaded', () => {
-const nextCourseDate = '15.01.2024';
+const nextCourseDate = '10.01.2024';
 const langArr = {
     "main-title": {
         "ua": "Онлайн курси польської мови!",

@@ -22,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
     select.addEventListener('change', (e) => {
         e.preventDefault()
         changeURLLanguage()
-
     });
 
     //changing the url to one with chosen language hash
